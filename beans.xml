@@ -1,0 +1,14 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- A simple bean definition -->
+	<bean id="univ1" class="com.package1.Univ.Courses" />
+	<bean id="univ2" class="com.package1.Univ.OtherCourses" />
+
+
+	<bean id="dmv" class="com.package1.College.Dmv">
+		<property name="educDept" ref="univ1" />
+	</bean>
+</beans>
